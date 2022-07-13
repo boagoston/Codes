@@ -1,0 +1,15 @@
+Para executar qualquer um dos algoritmos, é só abrir o Prompt Command e executa-lo com o interpretador do Python 3.
+
+Na pasta onde está localizado o executavel, é só executar o comando : "python multiplication.py" ou "python3 mutiplication.py"
+O mesmo serve para o algoritmo de soma (sum.py)
+
+A Versão utilizada para desenvolvimento foi o Python 3.10
+Os dois codigos segue a mesma linha de raciocinio para entrada de dados.
+
+Após a execução do algoritmo, será solicitado:
+
+Tamanho dos operadores - No caso é qual será o tamanho dos dois operadores que serão solicitados na sequencia. Será uma sequencia dos algarismo futuros.
+
+Operador 1 - Selecionar um algarismo e será feita uma sequencia deste algarismo em um vetor do Tamanho dos operadores colocado anteriormente
+
+Operador 2 - Selecionar um algarismo e será feita uma sequencia deste algarismo em um vetor do Tamanho dos operadores colocado anteriormente

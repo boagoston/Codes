@@ -1,0 +1,22 @@
+#Pseudo Codigo 
+
+#Adição
+
+
+sum_operation(size_of_operators):
+
+1.  vectors vector_operator1[size_of_operators], vector_operator2[size_of_operators], vector_result[size_of_operators+1];
+2.  int aux_sum, aux_result;
+3.  string operator_of_sequence1 , operator_of_sequence2;
+3.  read(operator_of_sequence1);
+4.  read(operator_of_sequence2);
+5.  vector_operator1 <- fill_vector(size_of_operators, operator_of_sequence1);
+6.  vector_operator2 <- fill_vector(size_of_operators,operator_of_sequence2);
+7.  for i<-size_of_operators until 0 do:
+8.        aux_result <- vector_operator1[i] + vector_operator2[i] + aux_sum;
+9.        vector_result[i+1] <- aux_result mod 10;
+10.       aux_sum <- aux_sum div 10;
+11. end for;
+12. vector_result[0] <- aux_div;
+13. show(vector_result);
+14. end

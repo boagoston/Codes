@@ -1,0 +1,28 @@
+multiplicationPseudocode(size_of_operators)
+
+1.  vector vector_operator1[size_of_operators], vector_operator2[size_of_operators], vector_result[size_of_operators*2];
+2.  int aux_multiplication, aux_sum, aux_result, vector_result_aux[size_of_operators+1];
+3.  string operator_of_sequence1 , operator_of_sequence2;
+3.  read(operator_of_sequence1);
+4.  read(operator_of_sequence2);
+5.  vector_operator1 <- fill_vector(size_of_operators, operator_of_sequence1);
+6.  vector_operator2 <- fill_vector(size_of_operators,operator_of_sequence2);
+7.  for i <- 0 until (size_of_operators*2) do:
+8.      vector_result[i] <- 0
+9.  for i <- size_of_operators until 0 do:
+10.        aux_multiplication <- 0
+11.        for j <- size_of_operators until 0 do:
+12.            aux_result <- vector_operator1[j] * vector_operator2[i] + aux_multiplication
+13.            vector_result_aux[j+1] <- aux_result mod 10
+14.            aux_multiplication <- aux_result div 10
+15.        end for;
+16.        vector_result_aux[0] <- aux_multiplication
+17.        aux_multiplication <- 0;
+18.        for j <- size_of_operators until 0 do:
+19.            aux_sum <- vector_result_aux[j+1] + vector_result[i+j] + aux_multiplication
+20.            vector_result[i+j] <- aux_sum mod 10;
+21.            aux_multiplication <- aux_sum div 10;
+22.        end for;
+23.    end for;
+24.    show(vector_result)
+end;
